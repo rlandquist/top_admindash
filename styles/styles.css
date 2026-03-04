@@ -12,7 +12,6 @@
  .body-wrapper {
      display: grid;
      grid-template-columns: 250px 1fr;
-     min-height: 0;
 
  }
 
@@ -63,7 +62,7 @@
      height: 100dvh;
      /* overflow: hidden; */
      grid-template-rows: 15vh 1fr;
-     /* titlebar gets 20dvh, content gets the rest */
+     /* titlebar gets 15vh, content gets the rest */
      min-height: 0;
  }
 
@@ -106,8 +105,8 @@
      font-size: 1.15rem;
      font-weight: 700;
      color: #1e293b;
-     margin-bottom: 1.5dvh;
-     padding-bottom: 0.5dvh;
+     margin-bottom: 0.75rem;
+     padding-bottom: 0.35rem;
      border-bottom: 2px solid #cbd5e1;
  }
 
@@ -118,6 +117,7 @@
      padding: 1rem;
      min-height: 0;
      overflow: hidden;
+      align-items: start;
  }
 
  /* ══════════════════════════
@@ -151,8 +151,8 @@
     ══════════════════════════ */
  .right-panel {
      display: grid;
-     grid-template-rows: 1fr 1fr;
-     gap: 1dvh;
+     grid-template-rows: auto auto;
+     gap: 1rem;
      min-height: 0;
      overflow: hidden;
  }
@@ -182,7 +182,7 @@
  }
 
  .announcement-item {
-     padding: 1dvh 1.1rem;
+     padding: 0.6rem 1.1rem;
      border-bottom: 1px solid #f1f5f9;
      display: grid;
      gap: 0.2rem;
@@ -207,7 +207,7 @@
  }
 
  .trending-item {
-     padding: 1dvh 1.1rem;
+     padding: 0.6rem 1.1rem;
      border-bottom: 1px solid #f1f5f9;
      display: grid;
      grid-template-columns: auto 1fr;
